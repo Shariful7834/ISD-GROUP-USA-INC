@@ -1,23 +1,17 @@
+
 .hero {
-    background-color: var(--overlay);
-    color: #fff;
+    width: 100%;
     height: 100vh;
-    width: 100%;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
     position: relative;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero:before {
-    content: '';
-    background: url('./images/hero.jpg') no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
-.hero .content {
+.content {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -27,49 +21,75 @@
     padding: 1rem;
 }
 
-.hero .content p:first-child {
-    font-style: italic;
-    font-size: .9rem;
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 80px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
 }
 
-.hero .content p:nth-child(2) {
-    font-size: 1.9rem;
+.content h2{
+    width: 80%;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 600;
+    border: 10px solid white;
+    border-left: none;
+    border-color: rgb(36, 202, 224);
+    border-right: none;
+    margin-top: 50px;
+    margin-left: 10%;
+
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 5px ;
+    margin-top: 50px;
+}
+.allBtn{
+   margin-top: 100px;
+}
+.allBtn p{
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
 }
 
-.hero .content p:nth-child(3) {
-    font-size: 5rem;
-    font-weight: 700;
+.allBtn a:hover{
+    background-color: rgb(9, 96, 209);
 }
 
-
-.hero .content p:nth-child(4) {
-    font-size: 2.2rem;
-    font-style: italic;
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
-
-.hero .button {
-    margin: 1rem 0;
-    width: 300px;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    color: #333;
-}
-
-.hero .button:hover {
-    background-color: var(--secondary-dark);
-    border: 1px solid var(--secondary-dark);
-}
-
-@media screen and (max-width:940px) {
-    .hero .content p:nth-child(3) {
-        font-size: 2.6rem;
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
     }
-
-    .hero .content p:nth-child(4) {
-        font-size: 1.6rem;
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
     }
 }
-
 
 
 
