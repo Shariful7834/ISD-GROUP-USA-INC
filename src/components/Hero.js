@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Hero.css'
 import video from '../components/images/video.mp4'
-import TypeWriterEffect from 'react-typewriter-effect';
+import { Typewriter } from 'react-simple-typewriter'
 
 
 
@@ -14,58 +14,43 @@ const Hero = () => {
 
     const closeMenu = () => setClick(false)
 
+    
+
     return (
+
         <div className='hero'>
             <video autoPlay loop muted plays-inline class="back-video">
             <source src={video} type="video/mp4"></source>
             </video>
              <div className='content'>
-                 <h1>ISD GROUP USA INC</h1>
-                 <h2> <span>
-                    <TypeWriterEffect
-                    textStyle={{
-                    textAlign:'center',
-                    color: '#fff',
-                    fontWeight: 600,
-                    fontSize: '.8em',
-                    }}
-                    // startDelay={2000}
-                    cursorColor="#fff"
-                    multiText={[
-                    'HiCAD SOFTWARE',
-                    'PDM SOFTWARE',
-                    'HELIOS ULTIMATE',
-                    'THE WORLD OF CAD',
-                    'HiCAD SOFTWARE',
-                    'PDM SOFTWARE',
-                    'HELIOS ULTIMATE',
-                    'THE WORLD OF CAD',
-                    'HiCAD SOFTWARE',
-                    'PDM SOFTWARE',
-                    'HELIOS ULTIMATE',
-                    'THE WORLD OF CAD',
-                    'HiCAD SOFTWARE',
-                    'PDM SOFTWARE',
-                    'HELIOS ULTIMATE',
-                    'THE WORLD OF CAD',
-                    'HiCAD SOFTWARE',
-                    'PDM SOFTWARE',
-                    'HELIOS ULTIMATE',
-                    'THE WORLD OF CAD',
-                    ]}
-
-                     multiTextDelay={1000}
-                    typeSpeed={20}
-                    
+                 <h1>WE DELIVER</h1>
+            <div className='provide'>
+                
+                 <h3> 
+                 <span style={{ color: '#D20643', fontWeight: 'bold' }}>
+                    {/* Style will be inherited from the parent element */}
+                    <Typewriter
+                        words={['PDM SOLUTION', 'CAD 3D-2D', 'THE WORLD OF CAD' ,'AND PDM SOLUTIONS' ]}
+                        loop={0}
+                        cursor
+                        cursorStyle='|'
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                        
                     />
-                    </span> 
-                 </h2>
-
-            
-                  <div class="allBtn">
-                     <a class="allBtn" href="#">Explore</a>
-                     <p>The world of CAD and PDM Solution</p>
+                    </span>
+                </h3>
                  </div>
+                 
+                 <div className='exploreBtn'>
+                     <div className="allBtn">
+                         <a className="allBtn" href="#">Explore</a>
+                         <p>The world of CAD and PDM Solution</p>
+                     </div>
+                    
+                 </div>
+            
             </div>
         </div>
     )

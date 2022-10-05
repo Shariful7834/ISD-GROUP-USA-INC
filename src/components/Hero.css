@@ -23,12 +23,15 @@
 
 .content{
     text-align: center;
+
 }
 .content h1{
-    font-size: 80px;
+    
+    font-size: 8rem;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     transition: 0.5s;
+    text-align: center;
 
 }
 .content h1:hover{
@@ -38,7 +41,7 @@
 
 .content h2{
     width: 80%;
-    font-size: 70px;
+    font-size: 150px;
     color: #fff;
     font-weight: 600;
     border: 10px solid white;
@@ -47,6 +50,7 @@
     border-right: none;
     margin-top: 50px;
     margin-left: 10%;
+    padding: 15px 0;
 
 }
 .content a{
@@ -69,7 +73,7 @@
 }
 
 .allBtn a:hover{
-    background-color: rgb(9, 96, 209);
+    background-color: #00509C;
 }
 
 .back-video{
@@ -91,9 +95,36 @@
     }
 }
 
-
-
-
+.provide{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  
+}
+.provide h3{
+   width: 100%;
+    font-size: 90px;
+    color: white;
+    margin-top: 20px;
+    border: 8px solid #FDCA01;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    padding: 10px;
+    transition: 0.5s;
+    text-align: center;
+    
+}
+.provide h3:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.exploreBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 

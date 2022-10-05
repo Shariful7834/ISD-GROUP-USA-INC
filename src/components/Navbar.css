@@ -8,6 +8,7 @@
     transition: .3s ease-in;
     overflow: hidden;
     background-color: rgba(0,0,0,.2);
+   
 }
 
 .header .navbar {
@@ -40,7 +41,7 @@
 
 .header .nav-item a:hover {
     padding-bottom: 12px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid rgb(21, 70, 228)
 }
 
 .hamburger {
